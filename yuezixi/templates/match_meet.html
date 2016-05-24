@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../static/all_top.css">
+<link rel="stylesheet" href="../static/meet.css">
+<meta http-equiv="content-type" content="tetx/html; charset=UTF-8">
+	<title></title>
+</head>
+<body>
+<nav class="top">
+	<a href="{{url_for('index')}}"><img src="../static/back_button.png" id="back"/></a>
+	<h2>我要约自习</h2>
+</nav>
+<div class="button">
+	<a href="{{url_for('make_meet')}}"><div class="yuezixi">邀约自习</div></a>
+	<div class="shouhuo on">条件匹配</div>
+</div>
+<div class="informations">
+	<form action="{{url_for('match_meet')}}" method="post">
+		<h2>自习主题</h2>
+		<input type="text" placeholder="请选择主题" list="subject" name="Subject_1"/>
+			<datalist id="subject">
+				<option value="无" />
+				<option value="答疑解惑"/>
+				<option value="探讨人生"/>
+				<option value="学科提升"/>
+				<option value="阅读书籍"/>
+				<option value="分享兴趣"/>
+				<option value="其他">
+			</datalist>
+		<h2>自习科目</h2>
+		<input type="text" placeholder="请输入科目" name="Course_1"/>
+		<h2>自习地点</h2>
+		<input type="text" placeholder="请选择地点" list="places_list" name="Location_1"/>
+			<datalist id="places_list">
+				<option value="无" />
+				<option value="东九"/>
+				<option value="东十二"/>
+				<option value="西十二"/>
+				<option value="东图"/>
+				<option value="主图"/>
+			</datalist>
+		<h2>自习时间</h2>
+		<span>开始时间：</span><input type="datetime-local" name="Start_time_1"/><br />
+		<span>结束时间：</span><input type="datetime-local" name="Start_time"/><br />
+		<h2>自习对象</h2>
+		<input type="text" class="target" name="Target_1" placeholder="年级" list="target_list"/>
+			<datalist id="target_list">
+				<option value="无" />
+				<option value="大一"/>
+				<option value="大二"/>
+				<option value="大三"/>
+				<option value="大四"/>
+				<option value="研究生"/>
+				<option value="博士"/>
+			</datalist>
+		<input type="text" class="target" name="Target_2" placeholder="性别" list="target_list_sex"/>
+			<datalist id="target_list_sex">
+				<option value="无" />
+				<option value="男生"/>
+				<option value="女生"/>
+			</datalist>	
+		<h2>预约人数</h2>
+		<input type="number" min="1" step="1" name="Number_1"/>
+		<input type="submit" value="开始匹配"/>
+	</form>
+</div>
+</body>
+</html>

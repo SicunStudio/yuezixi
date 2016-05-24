@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../static/all_top.css">
+<link rel="stylesheet" href="../static/person.css">
+<meta http-equiv="content-type" content="tetx/html; charset=UTF-8">
+	<title></title>
+	<style type="text/css">
+	img{
+
+	}
+	</style>
+</head>
+<body>
+<nav class="top">
+	<a href="{{url_for('index')}}"><img src="../static/back_new.png" id="back"/></a>
+	<a href="{{url_for('current')}}" class="current">当前预约</a>
+</nav>
+<div class="summery">
+	{%if pd.Photo %}
+	<img src ="../static/uploads/{{pd.Photo}}">
+	{% else %}
+	<img src="../static/header_new.png">
+	{% endif %}
+
+	{% if pd  %}
+	<div class="summery_1">
+		<span class="left">贝壳数：<span>{{pd.Shells}}</span></span>
+		<span class="right">等级称号：{%if pd.Shells<10 %}<span>自习初手</span>{% elif pd.Shells<30 %}<span>自习小子</span>{% elif pd.Shells<60 %}<span>自习达人</span>{% elif pd.Shells<100 %}<span>自习帝</span>{% else %}<span>自习狂魔</span>{% endif %}</span>
+
+	</div>
+	{% else %}
+	<div class="summery_1">
+		<span class="left">贝壳数：<span>0</span></span>
+		<span class="right">等级称号：<span>自习初手</span></span>
+	</div>
+	{% endif %}
+	</div>
+</div>
+<div class="div_1">
+	<table>
+		<tr>
+			<td>我的姓名：</td>
+			<td name="Name">{{pd.Name}}</td>
+		</tr>
+		<tr>
+			<td>我的性别：</td>
+			<td name="Sex">{{pd.Sex}}</td>
+		</tr>
+		<tr>
+			<td>专业班级：</td>
+			<td name="Major">{{pd.Major}}</td>
+		</tr>
+		<tr>
+			<td>手机号码：</td>
+			<td name="Phone_number">{{pd.Phone_number}}</td>
+		</tr>
+		<tr>
+			<td>QQ号码：</td>
+			<td name="QQ">{{pd.QQ}}</td>
+		</tr>
+		<tr>
+			<td>邮箱：</td>
+			<td name="Email">{{pd.Email}}</td>
+		</tr>
+		<tr>
+			<td>优势学科：</td>
+			<td name="Best_subject">{{pd.Best_subject}}</td>
+		</tr>
+		<tr>
+			<td>劣势学科：</td>
+			<td name="Worse_subject">{{pd.Worse_subject}}</td>
+		</tr>
+	</table>
+</div>
+<div class="div_2">
+	自我介绍：<span name="Self_introduction">{{pd.Self_introduction}}</span>
+</div>
+<div class="div_3">
+	学习目标与志向：<span name="Goal">{{pd.Goal}}</span>
+</div>
+<a href="{{url_for('modify')}}"><div class="div_4">
+修改信息
+</div></a>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../static/all_top.css">
+<link rel="stylesheet" href="../static/person.css">
+<link rel="stylesheet" href="../static/modify.css">
+
+<meta http-equiv="content-type" content="tetx/html; charset=UTF-8">
+	<title></title>
+</head>
+<body>
+<nav class="top">
+	<a href="{{url_for('person')}}"><img src="../static/back_new.png" id="back"/></a>
+	<a href="{{url_for('current')}}" class="current">当前预约</a>
+</nav>
+<div class="summery">
+	<img src="{{picture}}">
+	{% if pd  %}
+	<div class="summery_1">
+		<span class="left">贝壳数：<span>{{pd.Shells}}</span></span>
+		<span class="right">等级称号：{%if pd.Shells<10 %}<span>自习初手</span>{% elif pd.Shells<30 %}<span>自习小子</span>{% elif pd.Shells<60 %}<span>自习达人</span>{% elif pd.Shells<100 %}<span>自习帝</span>{% else %}<span>自习狂魔</span>{% endif %}</span>
+
+	</div>
+	{% else %}
+	<div class="summery_1">
+		<span class="left">贝壳数：<span>0</span></span>
+		<span class="right">等级称号：<span>自习初手</span></span>
+	</div>
+	{% endif %}
+</div>
+<div class="div_1">
+<form method="post" action="{{url_for('modify')}}" enctype="multipart/form-data">
+	<table>
+		{{form.hidden_tag()}}
+		{% if form.Email_1.errors %}
+		{% for error in form.Email_1.errors %}
+           <tr> <div align="center" style="color:red">{{ error }}</div></tr>
+
+          {% endfor %}<br>
+		{% endif %}
+
+		<tr>{{form.Photo.label}}{{form.Photo()}}</tr>
+
+		<tr>
+			<td>我的姓名：</td>
+			<td><input type="text" name="Name_1"/></td>
+		</tr>
+		<tr>
+			<td>我的性别：</td>
+			<td><input type="text" name="Sex_1"/></td>
+		</tr>
+		<tr>
+			<td>专业班级：</td>
+			<td><input type="text" name="Major_1"/></td>
+		</tr>
+		<tr>
+			<td>手机号码：</td>
+			<td><input type="number" name="Phone_number_1"/></td>
+		</tr>
+		<tr>
+			<td>QQ号码：</td>
+			<td><input type="number" name="QQ_1"/></td>
+		</tr>
+		<tr>
+			<td>邮箱：</td>
+			<td>{{form.Email_1()}}</td>
+		</tr>
+		<tr>
+			<td>优势学科：</td>
+			<td><input type="text" name="Best_subject_1"/></td>
+		</tr>
+		<tr>
+			<td>劣势学科：</td>
+			<td><input type="text" name="Worse_subject_1"/></td>
+		</tr>
+	</table>
+
+<div class="div_2">
+
+	自我介绍：<br />{{form.Self_introduction_1()}}
+</div>
+<div class="div_3">
+	学习目标与志向：<br /><textarea name="Goal"></textarea> 
+</div>
+
+{{form.Summit(value="确认修改")}}
+</form>
+</div>
+</body>
+</html>
