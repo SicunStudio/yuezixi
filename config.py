@@ -4,7 +4,7 @@ SECRET_KEY = 'you-will-never-guess'
 
 
 
-SQLALCHEMY_DATABASE_URI='mysql+pymysql://z33mo3z054:y2ikxw40i21xl2iji3h3yjwmxxxk0lyjlh510i1k@w.rdc.sae.sina.com.cn/app_yzxtest'#mysql的配置
+SQLALCHEMY_DATABASE_URI='mysql+pymysql://root:@localhost/yzxtest'#mysql的配置
 # SQLALCHEMY_DATABASE_URI='mysql+pymysql://root:abc201314@localhost/lyjdwh'#mysql的配置
 SQLALCHEMY_TRACK_MODIFICATIONS=True
 
@@ -14,7 +14,7 @@ MAIL_USE_SSL=True
 MAIL_USERNAME=''#如果是qq邮箱则为qq号，136邮箱同理
 MAIL_PASSWORD=''#客户端密码
 MAIL_USE_TLS = False
-#ADMINS=['1412511544@qq.com']
+ADMINS=['123456789@qq.com']
 
 
 WHOOSH_BASE='mysql+pymysql://root:abc201314@localhost/lyjdwh'
