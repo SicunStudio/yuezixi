@@ -4,7 +4,7 @@ SECRET_KEY = 'you-will-never-guess'
 
 
 
-SQLALCHEMY_DATABASE_URI='mysql+pymysql://root:cbc1193376579cbc@localhost/cbc'
+SQLALCHEMY_DATABASE_URI='mysql+pymysql://root:@localhost/cbc'
 SQLALCHEMY_TRACK_MODIFICATIONS=True
 
 MAIL_SERVER='smtp.qq.com'
@@ -15,7 +15,7 @@ MAIL_PASSWORD='hhvrqpgielyhggab'
 MAIL_USE_TLS = False
 ADMINS=['1412511544@qq.com']
 
-WHOOSH_BASE='mysql+pymysql://root:cbc1193376579cbc@localhost/cbc'
+WHOOSH_BASE='mysql+pymysql://root:@localhost/cbc'
 MAX_SEARCH_RESULTS = 50
 
 
