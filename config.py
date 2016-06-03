@@ -4,18 +4,18 @@ SECRET_KEY = 'you-will-never-guess'
 
 
 
-SQLALCHEMY_DATABASE_URI='mysql+pymysql://root:cbc1193376579cbc@localhost/cbc'
+SQLALCHEMY_DATABASE_URI='mysql+pymysql://z33mo3z054:y2ikxw40i21xl2iji3h3yjwmxxxk0lyjlh510i1k@w.rdc.sae.sina.com.cn/app_yzxtest'
 SQLALCHEMY_TRACK_MODIFICATIONS=True
 
 MAIL_SERVER='smtp.qq.com'
 MAIL_PORT=465
 MAIL_USE_SSL=True
-MAIL_USERNAME='1412511544'
-MAIL_PASSWORD='hhvrqpgielyhggab'
+MAIL_USERNAME=''
+MAIL_PASSWORD=''
 MAIL_USE_TLS = False
-ADMINS=['1412511544@qq.com']
+ADMINS=['']
 
-WHOOSH_BASE='mysql+pymysql://root:cbc1193376579cbc@localhost/cbc'
+WHOOSH_BASE='mysql+pymysql://z33mo3z054:y2ikxw40i21xl2iji3h3yjwmxxxk0lyjlh510i1k@w.rdc.sae.sina.com.cn/app_yzxtest'
 MAX_SEARCH_RESULTS = 50
 
 
