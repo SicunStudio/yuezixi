@@ -1,25 +1,25 @@
 .search{
 	position: fixed;
 	z-index: 7;
-	top:55px;
+	top:155px;
 	background:#fff;
 	width: 94%;
 	margin: 0 3%;
-	border-radius: 10px;
+	border-radius: 20px;
 	vertical-align: middle;
 	padding: 10px 0;
 }
 .info{
 	padding: 0 0;
-	margin: 5px 0;
+	margin: 0 0;
 	height:77%;
 	overflow: scroll;
 	position: absolute;
-	bottom:60px;
+	bottom:100px;
 }
 
 .search input{
-	font-size: 20px;
+	font-size: 64px;
 	border:0;
 	position: relative;
 	top:-9px;
@@ -34,26 +34,26 @@
 	position: relative;
 	top:10px;
 	padding-bottom:50px;
-	margin:0 0;
+	margin:0 3%;
 	background: #fff;
-	border:#b0bfcb solid 1px;
-	border-radius: 10px;
+	border:#b0bfcb solid 5px;
+	border-radius: 30px;
 	width:94%;
 }
 .contents_1{
 	position: relative;
-	top:50px;
+	top:320px;
 	padding-bottom:50px;
-	margin:0 0;
+	margin:0 3%;
 	background: #fff;
-	border:#b0bfcb solid 1px;
-	border-radius: 10px;
+	border:#b0bfcb solid 5px;
+	border-radius: 30px;
 	width:94%;
 }
 .contents table{position: relative;
 	left:170px;
 	top:32px;
-	font-size: 10px;
+	font-size: 50px;
 	}
 .contents table[class="bottom_info"]{
 	position: relative;
@@ -68,9 +68,9 @@
 }
 .contents table[class="bottom_info"] td[class="numbers"]{
 	text-align: right;
-	padding-left: 10px;
+	padding-left: 230px;
 }
 .contents span{position: relative;
-	font-size: 20px;}
+	font-size: 50px;}
 .contents td{margin:0 0;padding: 0 20px;}
-.contents img{position: absolute;width:80px;height:80px;padding: 0px 10px;border-radius: 50% 50%;}
+.contents img{position: absolute;width:200px;height:150px;padding: 0px 10px;border-radius: 50% 50%;}

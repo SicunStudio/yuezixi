@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="content-type" content="tetx/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="../static/all_top.css">
 <link rel="stylesheet" href="../static/person.css">
+<meta http-equiv="content-type" content="tetx/html; charset=UTF-8">
 	<title></title>
 	<style type="text/css">
 	img{
@@ -72,25 +71,15 @@
 			<td>劣势学科：</td>
 			<td name="Worse_subject">{{pd.Worse_subject}}</td>
 		</tr>
-		<tr>
-			<td>自我介绍：</td>
-			<td><span name="Self_introduction">{{pd.Self_introduction}}</span></td>
-		</tr>
-		<tr>
-			<td>学习目标：</td>
-			<td><span name="Goal">{{pd.Goal}}</span></td>
-		</tr>
-	
 	</table>
-</div><!-- 
+</div>
 <div class="div_2">
 	自我介绍：<span name="Self_introduction">{{pd.Self_introduction}}</span>
-</div> -->
-<!-- <div class="div_3">
+</div>
+<div class="div_3">
 	学习目标与志向：<span name="Goal">{{pd.Goal}}</span>
 </div>
- -->
- <a href="{{url_for('modify')}}"><div class="div_4">
+<a href="{{url_for('modify')}}"><div class="div_4">
 修改信息
 </div></a>
 </body>

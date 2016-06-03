@@ -1,35 +1,33 @@
 body{
 	color:#003056;
 	background: #b5fff2;
-	font-size: 20px;
-	text-align: center;
+	font-size: 50px;
 }
 div[class="div_1"],div[class="div_2"],div[class="div_3"],div[class="div_4"],div[class="summery_1"]{
 	border:5px solid #b5fff2;
-	width: 96%;
-	border-radius: 10px;
-	padding: 5px 0px;
+	width: 92%;
+	border-radius: 20px;
+	padding: 20px 20px;
 	background: #fff;
-	margin:0  0;
-	font-size: 15px;
+	margin:0 10px;
+	font-size: 50px;
 	position: relative;
 }
-div[class="div_4"]{text-align: center;font-size: 20px;padding: 10px 0;}
+div[class="div_4"]{text-align: center;font-size: 65px;}
 a{color:#003056;}
 
 .top{
 	background: #b5fff2;
-	height: 40px;
 	position: fixed;
-	z-index: 7;
+	z-index: 6;
 }
 .summery{
 	text-align: center;
 }
 .summery img{
 	position: relative;
-	top:30px;
-	height:80px;
+	top:70px;
+	height:250px;
 	z-index: 5;
 	border-radius:50% 50%;
 
@@ -38,12 +36,12 @@ a{color:#003056;}
 	background: #fff;
 	vertical-align: middle;
 	position: relative;
-	padding: 15px 0;
+	padding-top: 40px;
 }
 .summery span[class="left"]{margin-right: 30px;}
 .summery span[class="right"]{margin-left: 30px;}
 
 table td{
-	border-bottom: #ebeff2 solid 1px;
-	padding: 7px 0;
+	border-bottom: #ebeff2 solid 5px;
+	padding: 20px 0;
 	}

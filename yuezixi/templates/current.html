@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="content-type" content="tetx/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="../static/all_top.css">
 <link rel="stylesheet" href="../static/current.css">
+<meta http-equiv="content-type" content="tetx/html; charset=UTF-8">
 	<title></title>
 </head>
 <style>
@@ -15,14 +14,15 @@ a{color:#000;}
 	<a href="{{url_for('person')}}"><img src="../static/back_button.png" id="back"/></a>
 	<h2>当前预约</h2>
 </nav>
-<!-- <div class="search">
+<div class="search">
 	<img src="../static/search.png">
 	<input type="search" placeholder="人名，教室，科目等" />
-</div> -->
+</div>
 {% for mked in mkeds %}
 
 <div class="contents contents_1">
-	<img class="" src="../static/uploads/{{mked.Photo}}"/>
+	<!-- <img class="" src="../static/uploads/{{mked.Photo}}"/> -->
+	<img class="" src={%if mked.Photo !="" %} "../static/uploads/{{mked.Photo}}" {%else %} "../static/header_new.png" {%endif %}/>
 	<table class="top_info">
 			<tr>	
 				<td name="Name_4">{{mked.Name}}</td>

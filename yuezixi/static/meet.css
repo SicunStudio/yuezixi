@@ -1,32 +1,32 @@
 .button div{
 	display: inline;
 	position: relative;
-	top:60px;
-	width:120px;
-	line-height:40px;
-	border-radius: 10px 10px;
+	top:100px;
+	width:320px;
+	line-height:100px;
+	border-radius: 20px 20px;
 	text-align: center;
 	color:#c7b447;
-	font-weight: 100;
-	font-size: 20px;
+	font-weight: 660;
+	font-size: 55px;
 	background: #003056;
 	}
-.button .yuezixi{float: left;/*margin-left:100px;margin-top:50px;*/margin-left: 10px;}
-.button .shouhuo{float: right;/*margin-right:100px;margin-top:50px;*/margin-right: 10px;}
+.button .yuezixi{float: left;margin-left:100px;margin-top:50px;}
+.button .shouhuo{float: right;margin-right:100px;margin-top:50px;}
 .informations{
 	position: absolute;
-	top:130px;
-	margin: 0 0;
+	top:300px;
+	margin: 0 5%;
 	padding: 0 0;
 	width:100%;
 }
 .informations input,.informations textarea{
-	width:92%;
-	border-radius: 10px;
-	border:#cdd6dd 1px solid;
-	font-size: 20px;
-	padding: 10px 5px;
-	font-weight: 100;
+	width:90%;
+	border-radius: 30px;
+	border:#cdd6dd 5px solid;
+	font-size: 60px;
+	padding: 20px 0;
+	font-weight: 500;
 }
 .informations input[type="datetime-local"]{
 	width:50%;
@@ -34,21 +34,21 @@
 	text-align: center;
 }
 .informations input[class="target"]{
-	width:43%;
+	width:45%;
 	display: inline;
 	text-align: center;
 }
 .informations h2,.informations span{
 	position: relative;
 	color: #003056;
-	font-size: 20px;
-	font-weight: 100;
-	line-height: 30px;
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 60px;
 	padding:0 0;
-	margin: 10px 0; 
+	margin: 30px 0; 
 }
 .informations span{
-	font-size: 20px;
+	font-size: 50px;
 	margin: 0 5%;
 }
 .informations input[type="submit"]
@@ -57,8 +57,8 @@
 		margin-top: 30px;
 		margin-left: 26%;
 		text-align: center;
-		font-size: 20px;
-		font-weight: 100;
+		font-size: 70px;
+		font-weight: 800;
 		color: #c7b347;
 		background: #003056;
 		margin-bottom: 20px;
