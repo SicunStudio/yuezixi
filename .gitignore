@@ -2,4 +2,3 @@ env
 env/*
 yuezixi/__pycache__/
 __pycache__
-tmp/*
