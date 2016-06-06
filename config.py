@@ -4,7 +4,7 @@ SECRET_KEY = 'you-will-never-guess'
 
 
 
-SQLALCHEMY_DATABASE_URI='mysql+pymysql://root:@localhost/yzxtest'
+SQLALCHEMY_DATABASE_URI='mysql+pymysql://ACCESSKEY:SECRETKEY@MYSQL_HOST/app_yzxtest'
 SQLALCHEMY_TRACK_MODIFICATIONS=True
 
 MAIL_SERVER='smtp.qq.com'
@@ -15,7 +15,7 @@ MAIL_PASSWORD=''
 MAIL_USE_TLS = False
 ADMINS=['']
 
-WHOOSH_BASE='mysql+pymysql://root:@localhost/yzxtest'
+WHOOSH_BASE='mysql+pymysql://ACCESSKEY:SECRETKEY@MYSQL_HOST/app_yzxtest'
 MAX_SEARCH_RESULTS = 50
 
 
