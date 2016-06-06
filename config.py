@@ -1,9 +1,6 @@
 # -*-coding:utf-8 -*-
-import sae.const
 CSRF_ENABLED = True
 SECRET_KEY = 'you-will-never-guess'
-
-
 
 SQLALCHEMY_DATABASE_URI='mysql+pymysql://z33mo3z054:y2ikxw40i21xl2iji3h3yjwmxxxk0lyjlh510i1k@w.rdc.sae.sina.com.cn:3307/app_yzxtest'
 SQLALCHEMY_TRACK_MODIFICATIONS=True
@@ -18,10 +15,5 @@ ADMINS=['']
 
 WHOOSH_BASE='mysql+pymysql://z33mo3z054:y2ikxw40i21xl2iji3h3yjwmxxxk0lyjlh510i1k@w.rdc.sae.sina.com.cn:3307/app_yzxtest'
 MAX_SEARCH_RESULTS = 50
-
-
-
-
-
 
 #MAIL_DEFAULT_SENDER='系统'
