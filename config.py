@@ -15,7 +15,7 @@ MAIL_PASSWORD=''
 MAIL_USE_TLS = False
 ADMINS=['']
 
-WHOOSH_BASE='mysql+pymysql://ACCESSKEY:SECRETKEY@MYSQL_HOST/app_yzxtest'
+WHOOSH_BASE='mysql+pymysql://'+ACCESSKEY+':'+SECRETKEY+'@'+MYSQL_HOST+'/app_yzxtest'
 MAX_SEARCH_RESULTS = 50
 
 
