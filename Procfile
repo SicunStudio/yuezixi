@@ -1,1 +1,1 @@
-web: sudo python run1.py
+web: python run1.py
