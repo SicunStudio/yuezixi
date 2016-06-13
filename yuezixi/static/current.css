@@ -8,6 +8,7 @@
 	border-radius: 10px;
 	vertical-align: middle;
 	padding: 10px 0;
+	overflow: hidden;
 }
 .info{
 	padding: 0 0;
@@ -19,16 +20,22 @@
 }
 
 .search input{
-	font-size: 20px;
+	font-size: 18px;
 	border:0;
-	position: relative;
-	top:-9px;
-	left:15px;
+	width: 100%;
+	margin-top:5px;
+	margin-left:50px;
+	margin-right: 5px;
+	line-height: 26px;
+	float: left;
 }
 .search img{
-	position: relative;
-	top:8px;
+	position: absolute;
+	/*top:8px;*/
 	left:10px;
+	width: 34px;
+	height: 34px;
+	/*float: left;*/
 }
 .contents{
 	position: relative;
